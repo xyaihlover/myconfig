@@ -1,7 +1,7 @@
 "---vim self---"
 set nocompatible
 set encoding=utf-8
-set fileencodings=utf-8,cp936,ucs-bom,latin1
+set fileencodings=ucs-bom,utf-8,cp936,latin1
 set history=10
 set number
 

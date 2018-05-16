@@ -1,15 +1,24 @@
-"---vim self---"
+"---vim self env---"
 set nocompatible
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,latin1
 set history=10
+set nobackup
+set ruler
 set number
+set showcmd
+set showmode
+set hlsearch
+set t_RV=
+set novisualbell
+set visualbell t_RV=
+set scrolloff=5
 
 "---vim---"
-set nobackup
-set hlsearch
+set list
+set showmatch
+set matchtime=1
 set nowrapscan
-set showcmd
 set cursorline
 highlight cursorline cterm=none ctermbg=black ctermfg=none guibg=none guifg=none
 "set cursorcolumn
@@ -29,12 +38,11 @@ set splitright
 set autoindent
 set expandtab
 syntax on
-filetype plugin indent on
+filetype indent on
 set foldmethod=indent
 set foldlevel=0
 set foldnestmax=2
 highlight folded cterm=none ctermbg=black ctermfg=none guibg=none guifg=none
-nnoremap <space> za
 
 "---dev---"
 autocmd FileType php,python,c,java,perl,shell,bash,sh,vim,ruby,cpp set shiftwidth=4
